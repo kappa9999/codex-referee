@@ -81,44 +81,9 @@ This repository is in **alpha** and already has a working end-to-end `run` flow:
 
 ## Quick Start
 
-Requirements:
+See the full setup and first-run guide:
 
-- Node `24.x`
-- `pnpm` `10.x`
-- `git`
-
-Install:
-
-```bash
-pnpm install
-```
-
-Run quality checks:
-
-```bash
-pnpm format
-pnpm lint
-pnpm typecheck
-pnpm test
-pnpm build
-```
-
-Run Referee:
-
-```bash
-pnpm --filter @referee/cli dev -- run \
-  --task "add retry logic to api client" \
-  --repo /path/to/repo \
-  --strategies "safe,balanced,aggressive" \
-  --max-parallel 3
-```
-
-Example output:
-
-```text
-Run 20260225-203558-ibr6: winner safe-01 (69.50, low)
-Artifacts: /path/to/repo/runs/20260225-203558-ibr6
-```
+- `docs/QUICKSTART.md`
 
 ## FAQ
 
@@ -133,10 +98,9 @@ No. It recommends a winner and gives transparent artifacts so you stay in contro
 
 ## Roadmap
 
-1. Add persistence and run history indexing.
-2. Implement `inspect`, `accept`, and `feedback` commands.
-3. Add learning loop from accept/reject outcomes.
-4. Add CI workflows for affected-only checks.
+See the public roadmap:
+
+- `docs/ROADMAP.md`
 
 ## Technical Notes
 
@@ -151,8 +115,3 @@ Monorepo packages:
 - `@referee/schemas`
 - `@referee/store`
 - `@referee/cli`
-
-Policy files:
-
-- `docs/product/ENDGAME-OPTIMIZATION-MANDATE.md`
-- `references/optimization-policy.json`

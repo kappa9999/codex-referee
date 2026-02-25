@@ -1,6 +1,0 @@
-claim_id,claim_text,status,source_url,last_checked,notes
-C001,Generic phone companion category for coding agents is already active,validated,https://openai.com/index/introducing-the-codex-app/,2026-02-25,Also supported by GitHub and Cursor sources in SOURCE-LOG
-C002,OpenAI Codex supports Slack thread task workflows,validated,https://developers.openai.com/codex/integrations/slack,2026-02-25,Docs show invoking Codex in threads and opening results in Codex
-C003,Cursor supports async background-agent workflows with Slack integration,validated,https://cursor.com/changelog/1-1,2026-02-25,Used changelog evidence due docs page rendering limits
-C004,No direct all-in-one product in reviewed set explicitly combines parallel runs plus objective scoring plus auto winner selection plus adaptive routing,supported_inference,https://docs.openhands.dev/sdk/guides/agent-delegation,2026-02-25,Inference based on capability matrix across reviewed sources
-C005,Kilo offers parallel agents with isolated git worktrees and approvals,validated,https://kilo.ai/features/parallel-agents-cli,2026-02-25,Corroborated with Agent Manager docs
