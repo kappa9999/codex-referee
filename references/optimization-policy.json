@@ -1,0 +1,21 @@
+{
+  "policy_version": "1.0.0",
+  "policy_name": "EndgameOptimizationNoShortcuts",
+  "active": true,
+  "owner": "user",
+  "last_updated": "2026-02-25",
+  "hard_rules": [
+    "Optimize for long-term endgame outcomes over short-term speed.",
+    "Do not merge shortcut implementations without tracked replacement.",
+    "Require auditable scoring and winner-selection outputs.",
+    "Require explicit debt tracking for all compromises.",
+    "Only explicit user instruction can override policy."
+  ],
+  "decision_requirements": [
+    "maintainability_impact",
+    "performance_impact",
+    "reliability_impact",
+    "security_impact",
+    "testability_observability_impact"
+  ]
+}

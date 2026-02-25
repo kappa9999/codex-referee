@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.nx/
+coverage/
+*.tsbuildinfo
+.rpt2_cache/
+runs/
+.referee/
+*.log
+Thumbs.db
+.DS_Store

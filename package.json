@@ -1,0 +1,40 @@
+{
+  "name": "codex-referee",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Codex Referee monorepo",
+  "packageManager": "pnpm@10.14.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "nx run-many -t build",
+    "typecheck": "nx run-many -t typecheck",
+    "lint": "nx run-many -t lint",
+    "test": "nx run-many -t test",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "affected:build": "nx affected -t build",
+    "affected:lint": "nx affected -t lint",
+    "affected:test": "nx affected -t test",
+    "graph": "nx graph"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.3.0",
+    "drizzle-kit": "^0.31.9",
+    "eslint": "^10.0.2",
+    "nx": "^22.5.2",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1",
+    "vitest": "^4.0.18"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3"
+    ]
+  }
+}

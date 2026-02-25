@@ -1,0 +1,33 @@
+{
+  "name": "@referee/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "referee": "dist/main.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json",
+    "lint": "eslint src --max-warnings=0",
+    "test": "vitest run --passWithNoTests",
+    "dev": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@referee/core": "workspace:*",
+    "@referee/eval": "workspace:*",
+    "@referee/git": "workspace:*",
+    "@referee/rank": "workspace:*",
+    "@referee/report": "workspace:*",
+    "@referee/runner": "workspace:*",
+    "@referee/schemas": "workspace:*",
+    "commander": "^14.0.3",
+    "pino": "^10.3.1",
+    "zod": "^4.3.6"
+  }
+}
